@@ -47,6 +47,19 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Career stage colors
+        education: {
+          DEFAULT: "hsl(var(--education))",
+          foreground: "hsl(var(--education-foreground))",
+        },
+        jobs: {
+          DEFAULT: "hsl(var(--jobs))",
+          foreground: "hsl(var(--jobs-foreground))",
+        },
+        growth: {
+          DEFAULT: "hsl(var(--growth))",
+          foreground: "hsl(var(--growth-foreground))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -80,10 +93,19 @@ export default {
             height: "0",
           },
         },
+        "slide-in-from-right": {
+          from: {
+            transform: "translateX(100%)",
+          },
+          to: {
+            transform: "translateX(0)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "slide-in-right": "slide-in-from-right 0.3s ease-out",
       },
     },
   },
